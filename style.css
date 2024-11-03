@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/assets/books-and-watch.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  position:initial;
+  color:aliceblue;
+  min-height: 100vh;
+}
+
+.hero-header {
+margin-top: 200px;
+margin-bottom: 50px;
+}
+
+.focus-musics audio {
+  display: none;
+}
+
+.focus-musics i {
+  color:aqua;
+  font-size: 3rem;
+}
