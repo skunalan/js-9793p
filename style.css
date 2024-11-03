@@ -1,20 +1,31 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  background-image: url(/assets/books-and-watch.jpg);
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position:center;
-  position:initial;
-  color:aliceblue;
-  min-height: 100vh;
+  height: 100vh;
+  background: radial-gradient(circle, rgba(77,141,170,1) 20%, rgba(29,62,85,1) 100%);
+}
+.hero-header {
+  padding-top: 100px;
+  background-image: url(assets/img/time-earth.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.hero-header {
-margin-top: 200px;
-margin-bottom: 50px;
+.hero-header h1 {
+  font-size: 3.5rem;
+  color: #e0f0f5;
+}
+
+.hero-header p {
+  color: #e0f0f5;
+}
+
+.focus-musics {
+  padding-top: 2rem;
 }
 
 .focus-musics audio {
@@ -22,6 +33,18 @@ margin-bottom: 50px;
 }
 
 .focus-musics i {
-  color:aqua;
   font-size: 3rem;
+}
+
+.focus-musics i:hover {
+  color: rgba(0, 255, 255, 0.6);
+  cursor:pointer;
+}
+
+#volume-fader:hover {
+  cursor: grab;
+}
+
+#volume-fader:active {
+  cursor: grabbing;
 }

@@ -4,84 +4,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
 </head>
 
 <body>
-  <div class="container hero-header">
-    <div class="row ms-auto">
-      <div class="col-md-12">
-        <h1 class="text-center fw-bold">
-          ÇALIŞMANA ODAKLAN
-        </h1>
-        <P class="my-5 text-center">
-          Bu uygulama çalışmana odaklanman ve çalışmaların esnasında telefonunun dikkatini dağıtmasına engel olmana
-          yardımcı
-          olabilir. Çalışmaya başladıktan sonra telefonuna her baktığında butona tıkladığın takdirde sayaç artacak ve
-          gerektiğinde uygulama sana dinlenmen için öneride bulunabilecek. Ayrıca rahat bir çalışma ortamı oluşturmak
-          amacıyla sayfada yer alan
-          müziklerden de faydalanabilirsin.
-        </P>
-        <p class="text-center fs-4">
-          Dikkatini topla. <br>
-          <span class="fw-bold">Çalışmaya hazırlan!</span>
-        </p>
-      </div>
+  <div class="hero-header shadow-lg">
+    <div class="container">
+      <h1 class="py-5 text-center fw-bold">
+        ÇALIŞMANA ODAKLAN
+      </h1>
+      <P class="py-5 mb-0 text-center">
+        Bu uygulama çalışmana odaklanman ve çalışmaların esnasında telefonunun dikkatini dağıtmasına engel olmana
+        yardımcı
+        olabilir. Çalışmaya başladıktan sonra telefonuna her baktığında butona tıkladığın takdirde sayaç artacak ve
+        gerektiğinde uygulama sana dinlenmen için öneride bulunabilecek. Ayrıca rahat bir çalışma ortamı oluşturmak
+        amacıyla sayfada yer alan
+        müziklerden de faydalanabilirsin.
+      </P>
     </div>
   </div>
 
-  <div class="container">
-    <p class="text-center fs-3">
-      Çalışmaya başladığından beri telefonuna <span class="fw-semibold fs-1 text-danger" id="count">0</span> kere
-      baktın.
-    </p>
-  </div>
-
-  <div class="d-flex align-items-center justify-content-center mt-4">
-    <button id="count-button" class="btn btn-danger">
-      Telefona Baktım!
-    </button>
-  </div>
-
-  <div class="container focus-musics">
-    <div class="row">
-      <div class="col">
-        <h3>
-          Ders
-        </h3>
-        <i id="graduation-icon" class="fa-solid fa-graduation-cap"></i>
-        <audio id="studying-music" controls>
-          <source src="/assets/02 Productive Pulse Settling.m4a" type="audio/mp3">
-        </audio>
-    
-        <h3>
-          Okuma
-        </h3>
-        <i id="reading-icon" class="fa-solid fa-book-open"></i>
-        <audio id="reading-music" controls>
-          <source src="/assets/10 Creative Currents Flowing.m4a" type="audio/mp3">
-        </audio>
-    
-        <h3>
-          Çalışma
-        </h3>
-        <i id="business-icon" class="fa-solid fa-marker"></i>
-        <audio id="business-music" controls>
-          <source src="/assets/14 Workday Whispers of Calm.m4a" type="audio/mp3">
-        </audio>
-      </div>
+  <div class="warning-section">
+    <div class="container pt-5">
+      <p class="text-center fs-4">
+        Dikkatini topla. <br>
+        <span class="fw-bold">Çalışmaya hazırlan!</span>
+      </p>
     </div>
 
+    <div class="container pt-5">
+      <p class="text-center fs-3">
+        Çalışmaya başladığından beri telefonuna <span class="fw-semibold fs-1 text-danger py-0" id="count">0</span> kere
+        baktın.
+      </p>
+    </div>
+
+    <div class="d-flex align-items-center justify-content-center py-4">
+      <button id="count-button" class="btn btn-danger btn-lg shadow">
+        Telefona Baktım!
+      </button>
+    </div>
   </div>
 
-  <div>
-    <input type="range" id="volume-fader">
+
+  <div class="focus-musics">
+    <div class="container mt-5">
+      <div class="row">
+        <div class=" col d-flex align-items-center justify-content-center gap-5">
+          <div>
+            <h3>
+              Ders
+            </h3>
+            <div class="text-center">
+              <i id="graduation-icon" class="fa-solid fa-graduation-cap"></i>
+              <audio id="studying-music" controls>
+                <source src="/assets/02 Productive Pulse Settling.m4a" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+
+          <div>
+            <h3>
+              Okuma
+            </h3>
+            <div class="text-center">
+              <i id="reading-icon" class="fa-solid fa-book-open"></i>
+              <audio id="reading-music" controls>
+                <source src="/assets/10 Creative Currents Flowing.m4a" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+
+          <div>
+            <h3>
+              Çalışma
+            </h3>
+            <div class="text-center">
+              <i id="business-icon" class="fa-solid fa-marker"></i>
+              <audio id="business-music" controls>
+                <source src="/assets/14 Workday Whispers of Calm.m4a" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center mt-5 py-3">
+      <input type="range" id="volume-fader">
+    </div>
   </div>
 
   <script src="script.js"></script>
