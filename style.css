@@ -48,3 +48,18 @@ body {
 #volume-fader:active {
   cursor: grabbing;
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  text-decoration: none;
+  color: red;
+}
+
+.footer a:hover {
+  color: aliceblue;
+}
